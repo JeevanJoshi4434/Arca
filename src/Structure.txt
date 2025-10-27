@@ -1,0 +1,96 @@
+Root:.
+|   
++---main
+|   +---java
+|   |   \---com
+|   |       \---arcahub
+|   |           \---arca
+|   |               |   ArcaApplication.java
+|   |               |   
+|   |               +---messaging
+|   |               |   |   EventConsumer.java
+|   |               |   |   EventProducer.java
+|   |               |   |   KafkaConfig.java
+|   |               |   |   
+|   |               |   \---events
+|   |               |           BucketCreatedEvent.java
+|   |               |           FileDeletedEvent.java
+|   |               |           FileUploadedEvent.java
+|   |               |           
+|   |               +---security
+|   |               |   |   CryptoUtils.java
+|   |               |   |   PasswordUtils.java
+|   |               |   |   SecurityConfig.java
+|   |               |   |   
+|   |               |   +---config
+|   |               |   |       SecurityBeansConfig.java
+|   |               |   |
+|   |               |   +---controller
+|   |               |   +---encryption
+|   |               |   |   \---algorithm
+|   |               |   |           AESCBCAlgorithm.java
+|   |               |   |           AESGCMAlgorithm.java
+|   |               |   |           EncryptionAlgorithm.java
+|   |               |   |
+|   |               |   +---enums
+|   |               |   |       TokenType.java
+|   |               |   |
+|   |               |   +---hash
+|   |               |   +---secret
+|   |               |   |       Secrets.java
+|   |               |   |
+|   |               |   +---service
+|   |               |   |       AuthService.java
+|   |               |   |       EncryptionService.java
+|   |               |   |
+|   |               |   \---token
+|   |               |       |   TokenStrategyFactory.java
+|   |               |       |
+|   |               |       \---algorithm
+|   |               |               AccessTokenStrategy.java
+|   |               |               RefreshTokenStrategy.java
+|   |               |               TokenStrategy.java
+|   |               |               
+|   |               \---user
+|   |                   +---controller
+|   |                   |       UserController.java
+|   |                   |
+|   |                   +---dto
+|   |                   |   |   JwtResponse.java
+|   |                   |   |   LoginRequest.java
+|   |                   |   |   UserLoginRequest.java
+|   |                   |   |   UserResponse.java
+|   |                   |   |   UserSignupRequest.java
+|   |                   |   |   
+|   |                   |   \---login
+|   |                   |           EmailLoginRequest.java
+|   |                   |           UsernameLoginRequest.java
+|   |                   |
+|   |                   +---model
+|   |                   |       User.java
+|   |                   |
+|   |                   +---repository
+|   |                   |       UserRepository.java
+|   |                   |
+|   |                   \---service
+|   |                       |   LoginManager.java
+|   |                       |   UserService.java
+|   |                       |   UserServiceImpl.java
+|   |                       |
+|   |                       \---login
+|   |                               EmailLoginService.java
+|   |                               LoginService.java
+|   |                               UsernameLoginService.java
+|   |
+|   \---resources
+|       |   application.properties
+|       |
+|       +---static
+|       \---templates
+\---test
+    \---java
+        \---com
+            \---arcahub
+                \---arca
+                        ArcaApplicationTests.java
+                        
