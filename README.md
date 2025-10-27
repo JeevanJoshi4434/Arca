@@ -1,6 +1,6 @@
 ## 📦 Arca – Object Storage System
 
-**Arca** is a secure, self-hosted object storage system inspired by services like Google Drive and Amazon S3, but built entirely with **Node.js** and **TypeScript**. It provides a scalable and modular architecture for storing, managing, and accessing files in your own infrastructure.
+**Arca** is a secure, self-hosted object storage system inspired by services like Google Drive and Amazon S3, but built entirely with **Java** and **SpringBoot**. It provides a scalable and modular architecture for storing, managing, and accessing files in your own infrastructure.
 
 ### ✨ Key Features
 
